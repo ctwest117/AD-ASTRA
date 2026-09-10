@@ -15,6 +15,12 @@ window.addEventListener("scroll", () => {
 
     document.querySelector(".phobos").style.transform =
         `translateY(${scroll * 0.2}px)`;
+
+    document.querySelector(".europa").style.transform =
+        `translateY(${scroll * 0.1}px)`;
+
+      document.querySelector(".satellite").style.transform =
+        `translateY(${scroll * 0.1}px)`;
 });
 
 // const planet = document.querySelector("#shadow");

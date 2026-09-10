@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/images/logo.png" as="image">
+    <link rel="stylesheet" href="/fonts/transfonter.org-20260910-230135/stylesheet.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Document</title>
+    <title>AD ASTRA</title>
 </head>
 <body class="bg-slate-900">
     <header>
-        <nav class="fixed inset-x-0 top-0 z-999 bg-transparent px-6 py-5" aria-label="Main navigation">
+        <nav class="fixed inset-x-0 top-0 z-999 bg-transparent bg-linear-to-t from-transparent to-black/40 px-6 py-5" aria-label="Main navigation">
             <div class="mx-auto flex max-w-[80%] items-center justify-between">
                 <a class="flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-white" href="/index.html" aria-label="Home">
-                    <img class="size-9 object-contain" src="/images/logo.png" alt="ASTRA home">
-                    <span>AD ASTRA</span>
+                    <img class="size-9 object-contain" src="/images/logo.png" width="36" height="36" alt="ASTRA home">
+                    <span class="font-nasalization font-thin">AD ASTRA</span>
                 </a>
                 <div class="hidden items-center gap-8 md:flex">
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/index.html">Home</a>
@@ -36,8 +38,8 @@
     </header>
     <!-- Background Image -->
     <main class="flex flex-col items-center justify-center w-[100%]">
-        <div class="fixed inset-0 bg-[url('/images/milky.png')] bg-cover top-0 w-[100vw] h-[100vh] -z-100]"></div>
-        <!-- Hero Section -->
+        <div class="fixed inset-0 top-0 -z-[100] h-[100vh] w-[100vw] bg-[url('/images/milky.png')] bg-cover"></div>
+        <!-- Section 1 Hero -->
         <section  class="relative flex items-center bg-transparent bg-[url('/images/mars.png')] bg-right bg-no-repeat bg-size-[40%] w-[80vw] h-[100vh] xs:bg-size-[30%] xs:bg-position-[100% 50%]">
             <div class="justify-self-end w-[45%]">
                 <h1 class="text-white text-5xl font-black sm:text-7xl">THE FINAL FRONTIER</h1>
@@ -46,7 +48,7 @@
             </div>
             <div class="phobos absolute right-[20%] top-[38%] bg-transparent bg-[url('/images/phobos.png')] bg-center bg-cover z-200 aspect-square w-[8%] h-auto"></div>
         </section>
-        <!-- Section 2 -->
+        <!-- Section 2 About -->
         <section class="relative flex justify-end items-center bg-transparent bg-[url('/images/moon.png')] bg-left bg-no-repeat bg-size-[30%] w-[80vw] h-[100vh]">
             <div class="w-[55%] sm:w-[45%]">
                 <h1 class="text-5xl font-black text-white sm:text-7xl">BEYOND EARTH</h1>
@@ -60,7 +62,7 @@
                 <div id="shadow" class="w-full h-auto aspect-square rounded-full bg-radial-[at_25%_25%] from-transparent via-transparent via-20% to-black to-50%"></div>
             </div> -->
         </section>
-        <!-- Section 3 -->
+        <!-- Section 3 Missions -->
         <section class="relative flex bg-transparent bg-[url('/images/jupiter.png')] bg-bottom-right bg-no-repeat bg-size-[50%] min-h-[100vh] w-[80vw] flex-col justify-center py-24 text-white">
             <h1 class="mb-10 text-4xl font-black uppercase tracking-[0.15em] sm:text-6xl">Our Missions</h1>
             <div class="relative grid gap-6 md:grid-cols-3 z-10">
@@ -95,13 +97,13 @@
                     </div>
                 </article>
             </div>
-            <a class="mt-10 self-center border border-white/70 px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-slate-900" href="/missions.html">View all <span aria-hidden="true">&rarr;</span></a>
-            <div class="europa absolute right-[40%] top-[58%] bg-transparent bg-[url('/images/europa.png')] bg-center bg-cover z-0 aspect-square w-[15%] h-auto"></div>
+            <a class="relative z-10 mt-10 self-center border border-white/70 px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-slate-900" href="/missions.html">View all <span aria-hidden="true">&rarr;</span></a>
+            <div class="europa absolute left-[40%] bottom-[30%] bg-transparent bg-[url('/images/europa.png')] bg-center bg-cover z-0 aspect-square w-[15%] h-auto"></div>
         </section>
-        <!-- Section 4 -->
-        <section class="relative flex min-h-[70vh] w-[80vw] flex-col justify-center py-24 text-white">
-            <h1 class="text-3xl font-black uppercase tracking-[0.12em] sm:text-5xl">Our Flight Record</h1>
-            <p class="mt-5 max-w-2xl text-base text-white/75 sm:text-lg">Every mission extends the boundary of what humanity can reach, measure, and understand.</p>
+        <!-- Section 4 Records -->
+        <section class="relative flex min-h-[70vh] w-[80vw] flex-col justify-center py-24 text-white bg-[url('/images/shuttle.png')] bg-top-left bg-size-[20%] bg-no-repeat text-center">
+            <h1 class="text-3xl font-black uppercase tracking-[0.12em] text-right sm:text-5xl">Our Flight Record</h1>
+            <p class="mt-5 max-w-2xl text-base text-left text-white/75 sm:text-lg self-end">Every mission extends the boundary of what humanity can reach, measure, and understand.</p>
             <p class="mt-8 text-sm font-bold uppercase tracking-[0.18em] text-white/60">Mission milestones</p>
             <div class="mt-4 grid gap-4 rounded-3xl border border-white/10 bg-slate-950/80 p-6 sm:grid-cols-3 sm:gap-8">
                 <div><p class="text-2xl font-black">27</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Missions<br>completed</p></div>
@@ -113,10 +115,78 @@
                 <div><p class="text-2xl font-black">12+</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Years<br>in operation</p></div>
                 <div><p class="text-2xl font-black">3</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Planetary<br>systems</p></div>
                 <div><p class="text-2xl font-black">847M km</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Distance<br>traveled</p></div>
-                <div><p class="text-2xl font-black">26</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Mission<br>scientists</p></div>
+                <div><p class="text-2xl font-black">260</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Mission<br>scientists</p></div>
             </div>
             <p class="mt-6 max-w-3xl text-sm text-white/70">From orbital laboratories to deep-space probes, ASTRA turns distant possibilities into the next generation of exploration.</p>
         </section>
+        <!-- Section 5 Tech -->
+        <section class="relative flex min-h-[100vh] w-[80vw] flex-col justify-center  py-24 text-white">
+            <h1 class="text-3xl font-black uppercase tracking-[0.12em] sm:text-5xl">Technology / capabilities</h1>
+            <p class="mt-5 max-w-2xl text-base text-white/75 sm:text-lg">The systems that carry our explorers farther, safer, and deeper into the unknown.</p>
+            <p class="mt-8 text-sm font-bold uppercase tracking-[0.18em] text-white/60">Built for the unknown</p>
+            <div class="mt-4 grid gap-6 md:grid-cols-3">
+                <article class="overflow-hidden border border-white/10 bg-slate-950/80">
+                    <img class="h-48 w-full object-cover" src="/images/advanced_propulsion.png" alt="Advanced propulsion system">
+                    <div class="p-6">
+                        <h2 class="text-lg font-black uppercase tracking-[0.1em] text-cyan-300">Advanced propulsion</h2>
+                        <p class="mt-4 text-sm leading-6 text-white/70">Efficient drive systems built to shorten the distance between worlds.</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden border border-white/10 bg-slate-950/80">
+                    <img class="h-48 w-full object-cover" src="/images/autonomous_exploration.png" alt="Autonomous exploration rover">
+                    <div class="p-6">
+                        <h2 class="text-lg font-black uppercase tracking-[0.1em] text-amber-300">Autonomous exploration</h2>
+                        <p class="mt-4 text-sm leading-6 text-white/70">Robotic systems that navigate, adapt, and make discoveries beyond human reach.</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden border border-white/10 bg-slate-950/80">
+                    <img class="h-48 w-full object-cover" src="/images/deep_space_communications.png" alt="Deep-space communications array">
+                    <div class="p-6">
+                        <h2 class="text-lg font-black uppercase tracking-[0.1em] text-violet-300">Deep-space communication</h2>
+                        <p class="mt-4 text-sm leading-6 text-white/70">Reliable links that keep every mission connected across the dark void.</p>
+                    </div>
+                    <div class="satellite absolute right-[25%] top-[25%] bg-transparent bg-[url('/images/satellite.png')] bg-center bg-cover -z-1 aspect-square w-[10%] h-auto"></div>
+                </article>
+            </div>
+            <p class="mt-8 max-w-3xl text-sm text-white/70">Our technology is designed for the challenges of deep space and the discoveries waiting beyond it.</p>
+        </section>
+        <!-- Section 6 Next -->
+        <section class="relative flex min-h-[70vh] w-[80vw] items-center justify-center py-24 text-center text-white z-1">
+            <div class="absolute inset-0 -z-10  "></div>
+            <div class="absolute inset-0 -z-10"></div>
+            <div class="max-w-3xl">
+                <p class="text-sm font-bold uppercase tracking-[0.22em] text-white">The final frontier is waiting</p>
+                <h1 class="mt-5 text-4xl font-black uppercase tracking-[0.12em] sm:text-6xl">Where will we go next?</h1>
+                <p class="mx-auto mt-6 max-w-xl text-lg text-white/80 sm:text-xl">The future belongs to those willing to look beyond the horizon.</p>
+                <a class="mt-8 inline-flex items-center gap-3 border border-white/80 px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:bg-white hover:text-slate-900" href="/missions.html">Explore missions <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div id="earth" class="absolute left-1/2 -translate-x-1/2 -bottom-[5%] bg-[url('/images/earth.png')] bg-center bg-cover w-[101vw] h-auto aspect-[2/1] bg-no-repeat -z-2"></div>
+        </section>
     </main>
+    <footer class="relative z-1 border-t border-white/10 bg-slate-950 px-6 py-12 text-white">
+        <div class="mx-auto max-w-[80%]">
+            <p class="text-sm font-black uppercase tracking-[0.2em]">AD ASTRA</p>
+            <div class="mt-8 grid gap-8 text-sm sm:grid-cols-3">
+                <div>
+                    <p class="font-bold uppercase tracking-[0.15em] text-white/60">Explore</p>
+                    <a class="mt-3 block text-white/80 transition hover:text-white" href="/index.html">Home</a>
+                    <a class="mt-2 block text-white/80 transition hover:text-white" href="/missions.html">Missions</a>
+                </div>
+                <div>
+                    <p class="font-bold uppercase tracking-[0.15em] text-white/60">Company</p>
+                    <a class="mt-3 block text-white/80 transition hover:text-white" href="/about.html">About</a>
+                    <a class="mt-2 block text-white/80 transition hover:text-white" href="/contact.html">Contact</a>
+                </div>
+                <div>
+                    <p class="font-bold uppercase tracking-[0.15em] text-white/60">Connect</p>
+                    <a class="mt-3 block text-white/80 transition hover:text-white" href="/contact.html">Contact</a>
+                    <a class="mt-2 block text-white/80 transition hover:text-white" href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-white/20 pt-6">
+                <p class="text-sm text-white/60">&copy; 2026 AD ASTRA Exploration</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
