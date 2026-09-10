@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/src/main.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-900">
+    <header>
+        <nav class="fixed inset-x-0 top-0 z-999 bg-transparent px-6 py-5" aria-label="Main navigation">
+            <div class="mx-auto flex max-w-[80%] items-center justify-between">
+                <a class="flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-white" href="/index.html" aria-label="Home">
+                    <span class="grid size-9 place-items-center rounded-full border border-white/70 text-xs font-black">L</span>
+                    <span>Logo</span>
+                </a>
+                <div class="hidden items-center gap-8 md:flex">
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/about.html">About</a>
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/missions.html">Missions</a>
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/contact.html">Contact</a>
+                </div>
+                <button id="menu-toggle" class="grid size-10 place-items-center rounded-md border border-white/30 text-white transition hover:bg-white/10 md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+                    <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mx-auto mt-4 hidden max-w-7xl border-t border-white/20 pt-4 md:hidden text-right">
+                <div class="flex flex-col gap-4">
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/about.html">About</a>
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/missions.html">Missions</a>
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex flex-col items-center justify-center w-[100%]">
+        <div class="fixed inset-0 bg-[url('/images/milky.png')] bg-cover top-0 w-[100vw] h-[100vh] -z-100]"></div>
+        <section  class="relative flex items-center bg-transparent bg-[url('/images/mars.png')] bg-right bg-no-repeat bg-size-[40%] w-[80vw] h-[100vh] xs:bg-size-[30%] xs:bg-position-[100% 50%]">
+            <div class="justify-self-end w-25%"><h1 class="text-white text-4xl">THE FINAL FRONTIER</h1></div>
+            <div class="phobos absolute right-[20%] top-[38%] bg-transparent bg-[url('/images/phobos.png')] bg-center bg-cover z-200 aspect-square w-[8%] h-auto"></div>
+        </section>
+        <section class="relative flex justify-center items-center bg-transparent bg-[url('/images/moon.png')] bg-left bg-no-repeat bg-size-[10%] w-[80vw] h-[100vh]">
+            <!-- <div id="moon" class="bg-[url('/images/full_moon.png')] bg-center bg-cover bg-size-[105%]  rounded-full w-[50%] h-auto aspect-square rotate-140 overflow-hidden">
+                <div id="shadow" class="w-full h-auto aspect-square rounded-full bg-radial-[at_25%_25%] from-transparent via-transparent via-20% to-black to-50%"></div>
+            </div> -->
+        </section>
+    </main>
+</body>
+</html>
