@@ -11,10 +11,11 @@
         <nav class="fixed inset-x-0 top-0 z-999 bg-transparent px-6 py-5" aria-label="Main navigation">
             <div class="mx-auto flex max-w-[80%] items-center justify-between">
                 <a class="flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-white" href="/index.html" aria-label="Home">
-                    <span class="grid size-9 place-items-center rounded-full border border-white/70 text-xs font-black">L</span>
-                    <span>Logo</span>
+                    <img class="size-9 object-contain" src="/images/logo.png" alt="ASTRA home">
+                    <span>AD ASTRA</span>
                 </a>
                 <div class="hidden items-center gap-8 md:flex">
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/index.html">Home</a>
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/about.html">About</a>
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/missions.html">Missions</a>
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/contact.html">Contact</a>
@@ -23,8 +24,9 @@
                     <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
                 </button>
             </div>
-            <div id="mobile-menu" class="mx-auto mt-4 hidden max-w-7xl border-t border-white/20 pt-4 md:hidden text-right">
+            <div id="mobile-menu" class="mx-auto mt-4 hidden max-w-[80%] border-t border-white/20 pt-4 md:hidden text-right">
                 <div class="flex flex-col gap-4">
+                    <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/index.html">Home</a>
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/about.html">About</a>
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/missions.html">Missions</a>
                     <a class="text-sm font-medium text-white/80 transition hover:text-white" href="/contact.html">Contact</a>
@@ -32,16 +34,68 @@
             </div>
         </nav>
     </header>
+    <!-- Background Image -->
     <main class="flex flex-col items-center justify-center w-[100%]">
         <div class="fixed inset-0 bg-[url('/images/milky.png')] bg-cover top-0 w-[100vw] h-[100vh] -z-100]"></div>
+        <!-- Hero Section -->
         <section  class="relative flex items-center bg-transparent bg-[url('/images/mars.png')] bg-right bg-no-repeat bg-size-[40%] w-[80vw] h-[100vh] xs:bg-size-[30%] xs:bg-position-[100% 50%]">
-            <div class="justify-self-end w-25%"><h1 class="text-white text-4xl">THE FINAL FRONTIER</h1></div>
+            <div class="justify-self-end w-[45%]">
+                <h1 class="text-white text-5xl font-black sm:text-7xl">THE FINAL FRONTIER</h1>
+                <p class="mt-4 text-lg font-semibold text-white/80 sm:text-2xl">Beyond the silence of the stars, a new journey begins.</p>
+                <a class="mt-6 inline-block" href="/missions.html"><button class="inline-flex items-center gap-3 rounded-md border border-white/70 px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-slate-900" type="button">Explore missions <span aria-hidden="true">&rarr;</span></button></a>
+            </div>
             <div class="phobos absolute right-[20%] top-[38%] bg-transparent bg-[url('/images/phobos.png')] bg-center bg-cover z-200 aspect-square w-[8%] h-auto"></div>
         </section>
-        <section class="relative flex justify-center items-center bg-transparent bg-[url('/images/moon.png')] bg-left bg-no-repeat bg-size-[10%] w-[80vw] h-[100vh]">
+        <!-- Section 2 -->
+        <section class="relative flex justify-end items-center bg-transparent bg-[url('/images/moon.png')] bg-left bg-no-repeat bg-size-[30%] w-[80vw] h-[100vh]">
+            <div class="w-[55%] sm:w-[45%]">
+                <h1 class="text-5xl font-black text-white sm:text-7xl">BEYOND EARTH</h1>
+                <p class="mt-4 text-lg font-semibold text-white/80 sm:text-2xl">We believe humanity's greatest discoveries are still ahead of us.</p>
+                <p class="mt-3 text-base text-white/70 sm:text-lg">AD ASTRA develops technologies and missions designed to explore the worlds beyond our own.</p>
+                <a class="mt-6 inline-block" href="/about.html">
+                    <button class="inline-flex items-center gap-3 rounded-md border border-white/70 px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-slate-900" type="button"> LEARN MORE <span aria-hidden="true">&rarr;</span></button>
+                </a>
+            </div>
             <!-- <div id="moon" class="bg-[url('/images/full_moon.png')] bg-center bg-cover bg-size-[105%]  rounded-full w-[50%] h-auto aspect-square rotate-140 overflow-hidden">
                 <div id="shadow" class="w-full h-auto aspect-square rounded-full bg-radial-[at_25%_25%] from-transparent via-transparent via-20% to-black to-50%"></div>
             </div> -->
+        </section>
+        <!-- Section 3 -->
+        <section class="relative flex min-h-[100vh] w-[80vw] flex-col justify-center py-24 text-white">
+            <h1 class="mb-10 text-4xl font-black uppercase tracking-[0.15em] sm:text-6xl">Our Missions</h1>
+            <div class="grid gap-6 md:grid-cols-3">
+                <article class="overflow-hidden border border-white/30 bg-slate-950/60">
+                    <img class="h-48 w-full object-cover" src="/images/mars_mission.png" alt="Mars mission landscape">
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase tracking-[0.2em] text-white/60">Mission name</p>
+                        <h2 class="mt-2 text-2xl font-black uppercase">Mars</h2>
+                        <p class="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-white/70">Destination: Mars</p>
+                        <p class="mt-4 text-sm leading-6 text-white/75">Chart a course across the red planet and uncover the evidence of ancient worlds.</p>
+                        <p class="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-emerald-300">Status: In preparation</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden border border-white/30 bg-slate-950/60">
+                    <img class="h-48 w-full object-cover" src="/images/deep_space_mission.png" alt="Deep space mission starfield">
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase tracking-[0.2em] text-white/60">Mission name</p>
+                        <h2 class="mt-2 text-2xl font-black uppercase">Voyager</h2>
+                        <p class="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-white/70">Destination: Deep space</p>
+                        <p class="mt-4 text-sm leading-6 text-white/75">Push beyond the heliosphere and listen for signals from the edge of the known.</p>
+                        <p class="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-amber-300">Status: In progress</p>
+                    </div>
+                </article>
+                <article class="overflow-hidden border border-white/30 bg-slate-950/60">
+                    <img class="h-48 w-full object-cover" src="/images/europa_mission.png" alt="Europa mission surface">
+                    <div class="p-5">
+                        <p class="text-xs font-bold uppercase tracking-[0.2em] text-white/60">Mission name</p>
+                        <h2 class="mt-2 text-2xl font-black uppercase">Europa</h2>
+                        <p class="mt-3 text-sm font-semibold uppercase tracking-[0.12em] text-white/70">Destination: Europa</p>
+                        <p class="mt-4 text-sm leading-6 text-white/75">Search beneath the ice for the conditions that could make life possible.</p>
+                        <p class="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-sky-300">Status: Planned</p>
+                    </div>
+                </article>
+            </div>
+            <a class="mt-10 self-center border border-white/70 px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-white transition hover:bg-white hover:text-slate-900" href="/missions.html">View all <span aria-hidden="true">&rarr;</span></a>
         </section>
     </main>
 </body>
