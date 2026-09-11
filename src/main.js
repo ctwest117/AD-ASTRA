@@ -14,6 +14,7 @@ const parallaxElements = [
   [document.querySelector('.phobos'), 0.2],
   [document.querySelector('.europa'), 0.1],
   [document.querySelector('.satellite'), 0.1],
+  [document.querySelector('.shuttle'), 0.1],
 ].filter(([element]) => element)
 
 if (parallaxElements.length > 0) {
