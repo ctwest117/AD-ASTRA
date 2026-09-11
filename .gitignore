@@ -24,6 +24,4 @@ dist-ssr
 *.sw?
 
 # ai instructions
-
-AI.md
-missions.md
+instructions.md

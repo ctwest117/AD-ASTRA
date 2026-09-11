@@ -35,85 +35,93 @@
 			</div>
 		</nav>
 	</header>
-	<main class="flex flex-col items-center bg-slate-900 text-white">
+	<main class="flex flex-col items-center text-white">
 		<div class="fixed inset-0 top-0 -z-[100] h-[100vh] w-[100vw] bg-[url('/images/milky.png')] bg-cover"></div>
 
 		<!-- Hero -->
-		<section class="relative flex min-h-[75vh] w-[80vw] items-end overflow-hidden py-24 sm:min-h-[90vh]">
-			<div class="absolute inset-0 -z-10 bg-[url('/images/deep_space_mission.png')] bg-cover bg-center opacity-55"></div>
-			<div class="absolute inset-0 -z-10 bg-slate-950/60"></div>
-			<div class="max-w-3xl">
-				<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">AD ASTRA / MISSION CONTROL</p>
-				<h1 class="mt-5 font-nasalization text-5xl font-black uppercase tracking-[0.08em] sm:text-7xl">Our missions</h1>
-				<p class="mt-6 text-xl font-semibold text-white/90 sm:text-3xl">Exploring the worlds beyond our own.</p>
+		<section class="relative flex bg-[url('/images/reflection.png')] bg-cover bg-center h-[100vh] w-full justify-center overflow-hidden">
+			<div class="relative flex w-[80vw] items-end justify-end overflow-hidden py-24 ">
+				<div class="max-w-3xl">
+					<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">AD ASTRA / MISSION CONTROL</p>
+					<h1 class="mt-5 font-nasalization text-5xl font-black uppercase tracking-[0.08em] sm:text-7xl">Our missions</h1>
+					<p class="mt-6 text-xl font-semibold text-white/90 sm:text-3xl">Exploring the worlds beyond our own.</p>
+				</div>
 			</div>
 		</section>
 
-		<!-- Featured mission -->
-		<section class="relative flex min-h-[90vh] w-[80vw] flex-col justify-center py-24">
-			<div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
-				<div class="overflow-hidden border border-white/10 bg-slate-950/70"><img class="h-[28rem] w-full object-cover" src="/images/mars_mission.png" alt="Mars frontier mission landscape"></div>
-				<div>
-					<p class="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">Featured mission / MF-01</p>
-					<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Mars frontier initiative</h2>
-					<p class="mt-6 text-base leading-7 text-white/75 sm:text-lg">A staged human exploration program designed to establish the first durable research presence on another world.</p>
-					<div class="mt-8 grid grid-cols-2 gap-5 border-y border-white/20 py-6 sm:grid-cols-3">
-						<div><p class="font-nasalization text-2xl text-cyan-300">2037</p><p class="mt-1 text-xs uppercase tracking-[0.15em] text-white/60">Launch window</p></div>
-						<div><p class="font-nasalization text-2xl text-cyan-300">6</p><p class="mt-1 text-xs uppercase tracking-[0.15em] text-white/60">Crew members</p></div>
-						<div><p class="font-nasalization text-2xl text-cyan-300">480M km</p><p class="mt-1 text-xs uppercase tracking-[0.15em] text-white/60">Mission range</p></div>
-					</div>
-					<p class="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-emerald-300">Status: In preparation</p>
+		<!-- Timeline -->
+		<section class="relative flex min-h-[75vh] w-full justify-center items-center ">
+			<div class="relative flex h-full w-[80vw] flex-col justify-center py-24">
+				<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Mission timeline</p>
+				<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Progression into the dark</h2>
+				<div class="mt-10 grid gap-5 border-l border-white/30 pl-6 sm:grid-cols-5 sm:border-l-0 sm:border-t sm:pl-0">
+					<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">01</p><p class="mt-2 text-sm font-bold uppercase">Orbital missions</p></div>
+					<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">02</p><p class="mt-2 text-sm font-bold uppercase">Moon relay</p></div>
+					<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">03</p><p class="mt-2 text-sm font-bold uppercase">Mars frontier</p></div>
+					<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">04</p><p class="mt-2 text-sm font-bold uppercase">Deep space</p></div>
+					<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">05</p><p class="mt-2 text-sm font-bold uppercase">Europa ocean</p></div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Mission overview -->
-		<section class="relative flex min-h-[55vh] w-[80vw] flex-col justify-center py-24 text-center">
-			<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Mission overview</p>
-			<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">One program. Many horizons.</h2>
-			<p class="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">AD ASTRA coordinates a growing portfolio of orbital, planetary, and deep-space missions to turn exploration into a continuous human endeavor.</p>
-			<div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-				<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-cyan-300">12</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Missions</p></div>
-				<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-amber-300">4</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Active</p></div>
-				<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-emerald-300">7</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Worlds</p></div>
-				<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-violet-300">2</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Deep-space programs</p></div>
+		<section class="relative flex min-h-[100vh] w-full justify-center  bg-[url('public/images/mars_approach.png')] bg-no-repeat bg-cover">
+			<div class="absolute inset-0 bg-slate-950/60 z-0"></div>
+			<div class="relative flex min-h-full w-[80vw] flex-col justify-center py-24 text-center">
+				<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Mission overview</p>
+				<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">One program. Many horizons.</h2>
+				<p class="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">AD ASTRA coordinates a growing portfolio of orbital, planetary, and deep-space missions to turn exploration into a continuous human endeavor.</p>
+				<div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+					<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-cyan-300">12</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Missions</p></div>
+					<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-amber-300">4</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Active</p></div>
+					<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-emerald-300">7</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Worlds</p></div>
+					<div class="border border-white/10 bg-slate-950/70 p-6"><p class="font-nasalization text-4xl text-violet-300">2</p><p class="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-white/60">Deep-space programs</p></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured mission -->
+		<section class="relative flex min-h-[75vh] w-full justify-center">
+			<div class="relativ flex w-[80vw] flex-col justify-center py-24 z-10">
+				<div class="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+					<div class="overflow-hidden border border-white/10 bg-slate-950/70"><img class="h-[28rem] w-full object-cover" src="/images/mars_mission.png" alt="Mars frontier mission landscape"></div>
+					<div>
+						<p class="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">Featured mission / MF-01</p>
+						<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Mars frontier initiative</h2>
+						<p class="mt-6 text-base leading-7 text-white/75 sm:text-lg">A staged human exploration program designed to establish the first durable research presence on another world.</p>
+						<div class="mt-8 grid grid-cols-2 gap-5 border-y border-white/20 py-6 sm:grid-cols-3">
+							<div><p class="font-nasalization text-2xl text-cyan-300">2037</p><p class="mt-1 text-xs uppercase tracking-[0.15em] text-white/60">Launch window</p></div>
+							<div><p class="font-nasalization text-2xl text-cyan-300">6</p><p class="mt-1 text-xs uppercase tracking-[0.15em] text-white/60">Crew members</p></div>
+							<div><p class="font-nasalization text-2xl text-cyan-300">480M km</p><p class="mt-1 text-xs uppercase tracking-[0.15em] text-white/60">Mission range</p></div>
+						</div>
+						<p class="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-emerald-300">Status: In preparation</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<!-- Mission grid -->
-		<section class="relative flex min-h-[100vh] w-[80vw] flex-col justify-center py-24">
-			<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Mission overview</p>
-			<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">The mission grid</h2>
-			<div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-				<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/mars_mission.png" alt="Mars human exploration landscape"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-cyan-300">Mars human exploration</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Mars</p><p class="mt-4 text-sm leading-6 text-white/70">Prepare the first sustained human research presence on the red planet.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">Status: In preparation</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-cyan-300" href="#mars-frontier">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
-				<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/deep_space_mission.png" alt="Deep space Voyager mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-violet-300">Deep space Voyager program</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Deep space</p><p class="mt-4 text-sm leading-6 text-white/70">Extend our instruments beyond the heliosphere and map the dark between stars.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-amber-300">Status: In progress</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-violet-300" href="#voyager">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
-				<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/europa_mission.png" alt="Europa ocean discovery mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-sky-300">Europa ocean discovery</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Europa</p><p class="mt-4 text-sm leading-6 text-white/70">Search beneath the ice for the chemistry that could reveal a living ocean.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-sky-300">Status: Planned</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-sky-300" href="#europa">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
-				<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/asteroid_belt.png" alt="Asteroid survey mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-amber-300">Asteria survey</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Asteroid belt</p><p class="mt-4 text-sm leading-6 text-white/70">Study ancient bodies and identify materials for future orbital construction.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Status: Proposed</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-amber-300" href="#asteria">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
-				<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/moon.png" alt="Lunar relay mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-white">Luna relay</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Moon</p><p class="mt-4 text-sm leading-6 text-white/70">Build a communications bridge between Earth orbit and the wider solar system.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">Status: Active</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-cyan-300" href="#luna">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
-				<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/jupiter.png" alt="Jupiter atmospheric mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-emerald-300">Jupiter sentinel</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Jupiter system</p><p class="mt-4 text-sm leading-6 text-white/70">Observe the giant planet and its moons from a resilient deep-space platform.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Status: Research</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-emerald-300" href="#jupiter">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
-			</div>
-		</section>
-
-		<!-- Timeline -->
-		<section class="relative flex min-h-[75vh] w-[80vw] flex-col justify-center py-24">
-			<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Mission timeline</p>
-			<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Progression into the dark</h2>
-			<div class="mt-10 grid gap-5 border-l border-white/30 pl-6 sm:grid-cols-5 sm:border-l-0 sm:border-t sm:pl-0">
-				<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">01</p><p class="mt-2 text-sm font-bold uppercase">Orbital missions</p></div>
-				<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">02</p><p class="mt-2 text-sm font-bold uppercase">Moon relay</p></div>
-				<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">03</p><p class="mt-2 text-sm font-bold uppercase">Mars frontier</p></div>
-				<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">04</p><p class="mt-2 text-sm font-bold uppercase">Deep space</p></div>
-				<div class="sm:border-l sm:border-white/30 sm:pl-5 sm:pt-6"><p class="font-nasalization text-2xl text-cyan-300">05</p><p class="mt-2 text-sm font-bold uppercase">Europa ocean</p></div>
+		<section class="relative flex min-h-[100vh] w-full justify-center  bg-[url('public/images/mars_habitat.png')] bg-no-repeat bg-cover">
+			<div class="absolute inset-0 bg-slate-950/60 z-0"></div>
+			<div class=" relative flex min-h-[100vh] w-[80vw] flex-col justify-center py-24 z-10">
+				<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Mission overview</p>
+				<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">The mission grid</h2>
+				<div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+					<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/mars_mission.png" alt="Mars human exploration landscape"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-cyan-300">Mars human exploration</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Mars</p><p class="mt-4 text-sm leading-6 text-white/70">Prepare the first sustained human research presence on the red planet.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">Status: In preparation</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-cyan-300" href="#mars-frontier">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
+					<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/deep_space_mission.png" alt="Deep space Voyager mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-violet-300">Deep space Voyager program</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Deep space</p><p class="mt-4 text-sm leading-6 text-white/70">Extend our instruments beyond the heliosphere and map the dark between stars.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-amber-300">Status: In progress</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-violet-300" href="#voyager">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
+					<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/europa_mission.png" alt="Europa ocean discovery mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-sky-300">Europa ocean discovery</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Europa</p><p class="mt-4 text-sm leading-6 text-white/70">Search beneath the ice for the chemistry that could reveal a living ocean.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-sky-300">Status: Planned</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-sky-300" href="#europa">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
+					<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/asteroid_belt.png" alt="Asteroid survey mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-amber-300">Asteria survey</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Asteroid belt</p><p class="mt-4 text-sm leading-6 text-white/70">Study ancient bodies and identify materials for future orbital construction.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Status: Proposed</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-amber-300" href="#asteria">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
+					<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/moon.png" alt="Lunar relay mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-white">Luna relay</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Moon</p><p class="mt-4 text-sm leading-6 text-white/70">Build a communications bridge between Earth orbit and the wider solar system.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-emerald-300">Status: Active</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-cyan-300" href="#luna">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
+					<article class="overflow-hidden border border-white/10 bg-slate-950/80"><img class="h-48 w-full object-cover" src="/images/jupiter.png" alt="Jupiter atmospheric mission"><div class="p-5"><h3 class="font-nasalization text-xl uppercase text-emerald-300">Jupiter sentinel</h3><p class="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Destination: Jupiter system</p><p class="mt-4 text-sm leading-6 text-white/70">Observe the giant planet and its moons from a resilient deep-space platform.</p><p class="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-white/60">Status: Research</p><a class="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-white hover:text-emerald-300" href="#jupiter">View mission <span aria-hidden="true">&rarr;</span></a></div></article>
+				</div>
 			</div>
 		</section>
 
 		<!-- Final CTA -->
-		<section class="relative flex min-h-[60vh] w-[80vw] items-center justify-center overflow-hidden py-24 text-center">
-			<div class="absolute inset-0 -z-10 bg-[url('/images/earth.png')] bg-cover bg-center opacity-45"></div>
-			<div class="absolute inset-0 -z-10 bg-slate-950/65"></div>
+		<section class="relative flex min-h-[80vh] w-[80vw] items-center justify-center overflow-hidden py-24 text-center">
 			<div>
 				<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">The next world is waiting.</p>
-				<h2 class="mt-5 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Ready to reach farther?</h2>
+				<h2 class="mt-5 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">So why are you still here?</h2>
 				<a class="mt-8 inline-flex items-center gap-3 border border-white/80 px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:bg-white hover:text-slate-900" href="/contact.html">Contact AD ASTRA <span aria-hidden="true">&rarr;</span></a>
 			</div>
 		</section>
