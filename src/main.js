@@ -10,42 +10,18 @@ menuToggle?.addEventListener('click', () => {
   mobileMenu?.classList.toggle('hidden', isOpen)
 })
 
-window.addEventListener("scroll", () => {
-    const scroll = window.scrollY;
+const parallaxElements = [
+  [document.querySelector('.phobos'), 0.2],
+  [document.querySelector('.europa'), 0.1],
+  [document.querySelector('.satellite'), 0.1],
+].filter(([element]) => element)
 
-    document.querySelector(".phobos").style.transform =
-        `translateY(${scroll * 0.2}px)`;
+if (parallaxElements.length > 0) {
+  window.addEventListener('scroll', () => {
+    const scroll = window.scrollY
 
-    document.querySelector(".europa").style.transform =
-        `translateY(${scroll * 0.1}px)`;
-
-      document.querySelector(".satellite").style.transform =
-        `translateY(${scroll * 0.1}px)`;
-});
-
-// const planet = document.querySelector("#shadow");
-
-// function pointLightingAtSun() {
-//     const planetRect = planet.getBoundingClientRect();
-
-//     // Sun is at the top-left
-//     const sunX = 0;
-//     const sunY = 0;
-
-//     // Center of planet
-//     const planetX = planetRect.left + planetRect.width / 2;
-//     const planetY = planetRect.top + planetRect.height / 2;
-
-//     // Direction from planet → Sun
-//     const dx = sunX - planetX;
-//     const dy = sunY - planetY;
-
-//     const angle = Math.atan2(dy, dx) * 180 / Math.PI;
-
-//     planet.style.transform = `rotate(${angle}deg)`;
-// }
-
-// window.addEventListener("scroll", pointLightingAtSun);
-// window.addEventListener("resize", pointLightingAtSun);
-
-// pointLightingAtSun();
+    parallaxElements.forEach(([element, speed]) => {
+      element.style.transform = `translateY(${scroll * speed}px)`
+    })
+  })
+}
