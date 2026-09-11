@@ -35,61 +35,66 @@
 			</div>
 		</nav>
 	</header>
-	<main class="flex flex-col items-center bg-slate-900 text-white">
+	<main class="flex flex-col items-center text-white">
 		<div class="fixed inset-0 top-0 -z-[100] h-[100vh] w-[100vw] bg-[url('/images/milky.png')] bg-cover"></div>
 
 		<!-- Hero -->
-		<section class="relative flex min-h-[75vh] w-[80vw] items-end overflow-hidden py-24 sm:min-h-[90vh]">
-			<div class="absolute inset-0 -z-10 bg-[url('/images/hero.png')] bg-cover bg-center opacity-55"></div>
-			<div class="absolute inset-0 -z-10 bg-slate-950/60"></div>
-			<div class="max-w-3xl">
-				<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">AD ASTRA / CONTACT</p>
-				<h1 class="mt-5 font-nasalization text-5xl font-black uppercase tracking-[0.08em] sm:text-7xl">Contact AD ASTRA</h1>
-				<p class="mt-6 max-w-2xl text-xl text-white/85 sm:text-3xl">Have a question, proposal, or mission idea? Reach out.</p>
+		<section class="relative flex justify-center w-full overflow-hidden">
+			<div class="absolute left-1/2 top-0 h-full w-[100vw] -translate-x-1/2 bg-[url('/images/contact_hero.png')] bg-cover bg-center -z-10"></div>
+			<div class="relative flex min-h-[100vh] w-[80vw] items-end py-24">
+				<div class="max-w-3xl">
+					<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">AD ASTRA / CONTACT</p>
+					<h1 class="mt-5 font-nasalization text-5xl font-black uppercase tracking-[0.08em] sm:text-7xl">Contact <br> AD ASTRA</h1>
+					<p class="mt-6 max-w-2xl text-xl text-white/85 sm:text-3xl">Have a question, proposal, or mission idea? Reach out.</p>
+				</div>
 			</div>
 		</section>
 
 		<!-- Form and contact information -->
-		<section class="relative grid min-h-[90vh] w-[80vw] gap-12 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-			<div>
-				<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Start a transmission</p>
-				<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Send a message</h2>
-				<form class="mt-10 grid gap-6" action="#" method="post">
-					<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="name">Name<input class="border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="name" name="name" type="text" placeholder="Your name" required></label>
-					<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="email">Email<input class="border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="email" name="email" type="email" placeholder="you@example.com" required></label>
-					<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="subject">Subject<input class="border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="subject" name="subject" type="text" placeholder="Mission or proposal" required></label>
-					<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="message">Message<textarea class="min-h-36 resize-y border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="message" name="message" placeholder="Tell us what is on your horizon" required></textarea></label>
-					<button class="w-fit border border-white/80 px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:bg-white hover:text-slate-900" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>
-				</form>
-			</div>
-			<div class="border-l border-white/20 pl-8 lg:pl-12">
-				<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Contact information</p>
-				<div class="mt-8 grid gap-8">
-					<div><h3 class="font-nasalization text-xl uppercase text-cyan-300">General inquiries</h3><a class="mt-2 block text-white/75 transition hover:text-white" href="mailto:hello@adastra.example">hello@adastra.example</a><p class="mt-1 text-white/60">+1 713 555 0142</p></div>
-					<div><h3 class="font-nasalization text-xl uppercase text-amber-300">Careers</h3><a class="mt-2 block text-white/75 transition hover:text-white" href="mailto:careers@adastra.example">careers@adastra.example</a><p class="mt-1 text-white/60">Join the next generation of explorers.</p></div>
-					<div><h3 class="font-nasalization text-xl uppercase text-violet-300">Mission proposals</h3><p class="mt-2 text-white/60">For partnerships, research, and new worlds worth reaching.</p></div>
+		<section class="relative flex min-h-[90vh]">
+			<div class="relative grid h-full w-[80vw] gap-12 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+				<div>
+					<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Start a transmission</p>
+					<h2 class="mt-4 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Send a message</h2>
+					<form class="mt-10 grid gap-6" action="#" method="post">
+						<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="name">Name<input class="border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="name" name="name" type="text" placeholder="Your name" required></label>
+						<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="email">Email<input class="border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="email" name="email" type="email" placeholder="you@example.com" required></label>
+						<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="subject">Subject<input class="border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="subject" name="subject" type="text" placeholder="Mission or proposal" required></label>
+						<label class="grid gap-2 text-sm font-bold uppercase tracking-[0.12em] text-white/70" for="message">Message<textarea class="min-h-36 resize-y border-b border-white/30 bg-transparent px-0 py-3 text-base font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/40 focus:border-cyan-300" id="message" name="message" placeholder="Tell us what is on your horizon" required></textarea></label>
+						<button class="w-fit border border-white/80 px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:bg-white hover:text-slate-900" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>
+					</form>
+				</div>
+				<div class="border-l border-white/20 pl-8 lg:pl-12">
+					<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/60">Contact information</p>
+					<div class="mt-8 grid gap-8">
+						<div><h3 class="font-nasalization text-xl uppercase text-cyan-300">General inquiries</h3><a class="mt-2 block text-white/75 transition hover:text-white" href="mailto:hello@adastra.example">hello@adastra.example</a><p class="mt-1 text-white/60">+1 713 555 0142</p></div>
+						<div><h3 class="font-nasalization text-xl uppercase text-amber-300">Careers</h3><a class="mt-2 block text-white/75 transition hover:text-white" href="mailto:careers@adastra.example">careers@adastra.example</a><p class="mt-1 text-white/60">Join the next generation of explorers.</p></div>
+						<div><h3 class="font-nasalization text-xl uppercase text-violet-300">Mission proposals</h3><p class="mt-2 text-white/60">For partnerships, research, and new worlds worth reaching.</p></div>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Headquarters -->
-		<section class="relative flex min-h-[65vh] w-[80vw] items-center overflow-hidden py-24">
-			<div class="absolute inset-0 -z-10 bg-[url('/images/earth.png')] bg-cover bg-center opacity-45"></div>
-			<div class="absolute inset-0 -z-10 bg-slate-950/60"></div>
-			<div>
-				<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/70">Location / headquarters</p>
-				<h2 class="mt-5 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">AD ASTRA Headquarters</h2>
-				<p class="mt-5 text-lg font-semibold uppercase tracking-[0.12em] text-white/80">Houston, Texas</p>
-				<p class="mt-4 max-w-xl text-base leading-7 text-white/70">Our mission control and research teams operate from the gateway to human spaceflight.</p>
+		<section class="relative flex min-h-[80vh] w-full items-center justify-center">
+			<div class="absolute left-1/2 -translate-x-1/2 inset-0 -z-10 bg-[url('/images/rocket_launch.png')] bg-cover bg-bottom w-full h-full"></div>
+			<div class="absolute inset-0 -z-10 bg-slate-950/45"></div>
+			<div class="relative flex h-full w-[80vw] items-center py-24">
+				<div>
+					<p class="text-sm font-bold uppercase tracking-[0.2em] text-white/70">Location / headquarters</p>
+					<h2 class="mt-5 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">AD ASTRA Headquarters</h2>
+					<p class="mt-5 text-lg font-semibold uppercase tracking-[0.12em] text-white/80">Houston, Texas</p>
+					<p class="mt-4 max-w-xl text-base leading-7 text-white/70">Our mission control and research teams operate from the gateway to human spaceflight.</p>
+				</div>
 			</div>
 		</section>
 
 		<!-- Final CTA -->
-		<section class="relative flex min-h-[60vh] w-[80vw] items-center justify-center overflow-hidden py-24 text-center">
-			<div class="absolute inset-0 -z-10 bg-[url('/images/shuttle.png')] bg-cover bg-center opacity-35"></div>
-			<div class="absolute inset-0 -z-10 bg-slate-950/65"></div>
+		<section class="relative flex min-h-[80vh] w-[80vw] items-center justify-center py-24 text-center">
+			<!-- <div class="absolute left-1/2 -translate-x-1/2 -z-10 bg-[url('/images/mars_approach.png')] bg-cover bg-center w-[100vw] h-full"></div> -->
+			<!-- <div class="absolute inset-0 -z-10 bg-slate-950/65"></div> -->
 			<div>
-				<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">The next frontier starts with a question.</p>
+				<p class="text-sm font-bold uppercase tracking-[0.22em] text-white/70">The final frontier is out there.</p>
 				<h2 class="mt-5 font-nasalization text-4xl font-black uppercase tracking-[0.08em] sm:text-6xl">Ready to reach farther?</h2>
 				<a class="mt-8 inline-flex items-center gap-3 border border-white/80 px-6 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:bg-white hover:text-slate-900" href="/missions.html">Explore our missions <span aria-hidden="true">&rarr;</span></a>
 			</div>
