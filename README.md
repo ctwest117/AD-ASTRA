@@ -2,6 +2,11 @@
 
 MY hackathon result.
 
+## known issues:
+- not all sections of each page are the same size due to ai, not enough time to fix
+- excessive use of div's
+- nav bar hard to read when over brighter areas or text
+
 ## log:
 
 - 19d6e4e (HEAD -> main, origin/main) added images to about
